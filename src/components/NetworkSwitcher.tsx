@@ -1,0 +1,50 @@
+import { useState } from 'react'
+import { useAccount, useSwitchChain } from 'wagmi'
+import { Select, SelectItem, SelectContent, SelectGroup, SelectTrigger, SelectValue } from './ui/select'
+
+export function NetworkSwitcher() {
+  const { chains, switchChain, isPending } = useSwitchChain()
+  const { chain } = useAccount()
+  const defaultValue = chain?.id.toString()
+
+  const [pendingChainId, setPendingChainId] = useState<number>()
+  if (!chain) return null
+
+  return (
+    <Select
+      onValueChange={(val) => {
+        setPendingChainId(+val)
+        switchChain({
+          chainId: Number(val),
+        })
+      }}
+      defaultValue={defaultValue}
+      value={defaultValue}
+    >
+      <SelectTrigger className="max-w-auto lt-sm:hidden">
+        <SelectValue>
+          <span className="flex-center">
+            {isPending && <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-primary" />}{' '}
+            {chain.name}
+          </span>
+        </SelectValue>
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          {chains.map((x) =>
+            x.id === chain?.id ? null : (
+              <SelectItem value={`${x.id}`} key={x.id} className="">
+                <span className="flex-center">
+                  {isPending && x.id === pendingChainId && (
+                    <span className="i-line-md:loading-twotone-loop mr-1 h-4 w-4 inline-flex text-primary" />
+                  )}{' '}
+                  {x.name}
+                </span>
+              </SelectItem>
+            ),
+          )}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+  )
+}
