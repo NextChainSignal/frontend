@@ -1,4 +1,6 @@
-const page = () => {
-  return <div>Traders</div>
+'use client'
+
+const Trader = () => {
+  return <div>111</div>
 }
-export default page
+export default Trader
