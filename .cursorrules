@@ -1,0 +1,50 @@
+### Project Standards
+- Follow requirements precisely and completely
+- Use TypeScript for type safety
+- Implement proper error handling
+- Write unit tests for critical functionality
+- Follow accessibility (a11y) best practices
+- Use proper Git commit conventions
+
+### Development Process
+- Plan implementation with detailed pseudocode first
+- Review security implications
+- Ensure code is production-ready
+- No TODOs or incomplete implementations
+- Include necessary type definitions
+- Document complex logic with comments
+
+### Tech Stack Guidelines
+- Next.js 15+ with App Router
+- React 19+ with hooks
+- TypeScript for type safety
+- TailwindCSS for styling
+- Radix UI for accessible components
+- Zustand for state management
+- TanStack Query for data fetching
+- Wagmi for Web3 integration
+
+### Code Style Rules
+- Use early returns for cleaner logic flow
+- Prefer Tailwind over custom CSS
+- Implement proper accessibility attributes
+- Use semantic HTML elements
+- Follow React Server Components best practices
+- Utilize proper error boundaries
+- Implement proper loading states
+
+### Naming Conventions
+- Event handlers prefix: 'handle' (e.g., handleClick)
+- Components: PascalCase
+- Functions/Variables: camelCase
+- Constants: UPPER_SNAKE_CASE
+- Types/Interfaces: PascalCase with 'T' prefix for types
+- Files: kebab-case for pages, PascalCase for components
+
+### Component Structure
+- Implement proper prop types
+- Use composition over inheritance
+- Keep components focused and single-responsibility
+- Implement proper loading and error states
+- Use proper React hooks
+- Implement proper memoization where needed

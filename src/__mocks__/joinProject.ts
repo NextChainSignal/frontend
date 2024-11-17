@@ -1,0 +1,65 @@
+export const mockProjects = [
+  {
+    id: '1',
+    name: '量化策略 Alpha',
+    status: '运行中',
+    currency: 'USDT',
+    unrealizedPnL: 12500.5,
+    followAmount: 250000,
+    followersCount: 125,
+    aum: 1500000,
+    profitSharingRatio: 20,
+    minFollowAmount: 1000,
+    holdings: [
+      {
+        asset: 'BTC',
+        amount: 0.5,
+        avgBuyPrice: 35000.0,
+        unrealizedPnL: 750.0,
+        realizedPnL: -150.0,
+        updatedAt: '2024-01-15T10:30:00Z',
+      },
+    ],
+    trades: [
+      {
+        executedAt: '2024-01-15T09:00:00Z',
+        pair: 'BTC/USDC',
+        direction: 'buy',
+        amount: 0.5,
+        price: 35000.0,
+        total: 17500.0,
+      },
+    ],
+    balanceHistory: [
+      {
+        coin: 'USDC',
+        time: '2024-01-14T08:00:00Z',
+        amount: 10000.0,
+        fromWallet: '0x1234...5678',
+        toWallet: 'Platform Wallet',
+      },
+    ],
+    followers: [
+      {
+        userId: 'user001',
+        amount: 5000.0,
+        unrealizedPnL: 250.0,
+        realizedPnL: -80.0,
+        roi: 3.4,
+        status: 'running',
+      },
+    ],
+  },
+  {
+    id: '2',
+    name: '趋势交易 Beta',
+    status: '暂停中',
+    currency: 'USDT',
+    unrealizedPnL: 8750.25,
+    followAmount: 180000,
+    followersCount: 89,
+    aum: 950000,
+    profitSharingRatio: 15,
+    minFollowAmount: 500,
+  },
+]

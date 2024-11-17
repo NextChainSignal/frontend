@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Bell, Menu, X } from 'lucide-react'
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -33,6 +34,12 @@ const Home = () => {
                 >
                   How It Works
                 </a>
+                <Link
+                  href="/all-pages"
+                  className="border-transparent text-muted-foreground hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                >
+                  看下有哪些页面了
+                </Link>
               </div>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:items-center">
