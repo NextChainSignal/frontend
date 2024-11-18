@@ -46,6 +46,7 @@ __metadata:
     react-dom: "npm:19.0.0-rc-66855b96-20241106"
     react-dropzone: "npm:^14.3.5"
     react-hook-form: "npm:^7.53.2"
+    react-ts-tradingview-widgets: "npm:^1.2.5"
     sonner: "npm:^1.7.0"
     tailwind-merge: "npm:^2.5.4"
     tailwind-scrollbar: "npm:^3.1.0"
@@ -10954,6 +10955,16 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/6d66f3bdb65e1ec79089f80314da97c9a005087a04ee034255a5de129a4c0d9fd0bf99fa7bf642781ac2dc745ca687aae3de082bd8afdd0d117bc953241e15ad
+  languageName: node
+  linkType: hard
+
+"react-ts-tradingview-widgets@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "react-ts-tradingview-widgets@npm:1.2.5"
+  peerDependencies:
+    react: ^17.0.2 || ^18.1.0
+    react-dom: ^17.0.2 || ^18.1.0
+  checksum: 10c0/8c7ebacdcc65b76f206e0a7f55eeaa6743d833a8d93fb1f123b49dd4d1066e3a745bbca43554213c8bd0ecc2816a0bc7328d32b4ebd58bc173861eb8a59c78be
   languageName: node
   linkType: hard
 

@@ -57,6 +57,12 @@ const routes: PageRoute[] = [
     description: '创建跟单项目',
     group: '交易',
   },
+  {
+    title: '期货',
+    path: '/futures/BTCUSDT',
+    description: '查看期货交易信息',
+    group: '交易',
+  },
 ]
 
 export default function SitemapPage() {
